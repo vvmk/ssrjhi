@@ -1,0 +1,11 @@
+version: '2'
+services:
+    ssrjhi-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/ssrjhi/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=ssrjhi
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
